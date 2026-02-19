@@ -69,7 +69,38 @@ function sendEmail(e) {
     "Message:\n" + message
   );
 
-  // 👉 Replace with your Gmail ID
+  // Replace with  Gmail ID
   window.location.href =
     `mailto:@gmail.com?subject=${subject}&body=${body}`;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const skillCards = document.querySelectorAll('.skill');
+
+    console.log("Found " + filterButtons.length + " buttons and " + skillCards.length + " cards.");
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const target = button.getAttribute('data-target');
+            console.log("Filtering for: " + target);
+
+            // 1. Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // 2. Add active to clicked button
+            button.classList.add('active');
+
+            // 3. Show/Hide Cards
+            skillCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (target === 'all' || category === target) {
+                    card.style.display = 'flex'; // Or 'block'
+                    card.classList.add('show');
+                } else {
+                    card.style.display = 'none';
+                    card.classList.remove('show');
+                }
+            });
+        });
+    });
+});

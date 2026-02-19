@@ -12,6 +12,8 @@
 
     <!-- Material Design Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
     <!-- Font Awesome Icon - CSS-->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -50,14 +52,14 @@
     <!-- Hero -->
     <section id="hero">
         
-  <img src="./coverpic/coverpic-caricature.png" id="coverpic"  alt="coverpic" class="responsive-img">
+  <img src="./coverpic/coverpic-caricature.png" id="coverpic"  alt="coverpic" class="img-fluid">
  <div class="hero-content">
     <h2>Sukriti Dhang</h2>
     <h4>PhD in Computer Vision, AI/ML, AI for Multimedia</h4>
     <!-- <a href="resume.pdf" class="btn" download>Download Resume</a> -->
        
         
-         <!-- <div class='buttons'>
+         <!-- <div class='buttons'>responsive-img
                             <a href="#about" class="readme">Read More</a>
                             <a href="#contact" class="contactme">Contact Me</a>
                         </div> -->
@@ -65,6 +67,9 @@
 
 
         </div>
+         <div class="hero-credit">
+        © Image generated with ChatGPT
+    </div>
        
     </section>
 <div class="row">
@@ -304,9 +309,64 @@ modelling, validation and verification.</p>
         </div>
     </section>
 
+<!-- Skills -->
+ <section id="skills">
+                <div class="container">
+                    <h2>Skills</h2>
+                    <hr>
 
+                    <div class="filter-wrapper">
+                        <button class="filter-btn active" data-target="all">All</button>
+                        <button class="filter-btn" data-target="prgmlang">Programming Languages</button>
+                        <button class="filter-btn" data-target="libs">Libraries </button>
+                        <button class="filter-btn" data-target="dev">Development</button>
+                        <button class="filter-btn" data-target="doctools">Docmentation Tools</button>
+                        <button class="filter-btn" data-target="design">Design & Content</button><!--Diagramming Tools-->
+                        
+                        <!--button class="filter-btn" data-target="ip">Interpersonal Skill</button-->
+                    </div>
+
+                    <div class="skills-grid" id="skills-container">
+                        <div class="skill" data-category="prgmlang"><img src="./logo/python-bw.png" class="skill-logo", style="width:20px;height:20px"> Python</div><!--<i class="fab fa-python ">-->
+                        <div class="skill" data-category="prgmlang"><img src="./logo/mathworks-bw.png" class="skill-logo", style="width:20px;height:20px"> MATLAB</div>
+
+                        <div class="skill" data-category="libs"><img src="./logo/tensorflow-bw.png" class="skill-logo", style="width:18px;height:18px"> TensorFlow</div>
+                        <div class="skill" data-category="libs"><img src="./logo/keras-bw.png" class="skill-logo", style="width:18px;height:18px"> Keras</div>
+                        <div class="skill" data-category="libs"><img src="./logo/opencv-bw.png" class="skill-logo", style="width:18px;height:18px"> OpenCV</div>
+                        <div class="skill" data-category="libs"><img src="./logo/numpy-bw.png" class="skill-logo", style="width:20px;height:20px"> NumPy</div>
+                        <!--div class="skill" data-category="libs"><i class="bi bi-activity"></i> SciPy</div-->
+                        <div class="skill" data-category="libs"><img src="./logo/matplotlib-bw.png" class="skill-logo", style="width:20px;height:20px"> Matplotlib</div>
+
+
+                        <div class="skill" data-category="dev"><i class="fab fa-html5 "></i> HTML5</div>
+                        <div class="skill" data-category="dev"><i class="fab fa-css3-alt "></i> CSS3</div>
+                        <div class="skill" data-category="dev"><i class="fab fa-bootstrap "></i> Bootstrap5</div>
+                        <div class="skill" data-category="dev"><i class="fab fa-js "></i> JavaScript</div>
+                        
+                        
+
+                       
+                        <div class="skill" data-category="doctools"><i class="bi bi-journal-text"></i> Latex</div>
+                        <div class="skill" data-category="doctools"><i class="fas fa-file-word"></i> MS Office</div>
+                        <div class="skill" data-category="doctools"><i class="fas fa-file-excel"></i> MS Excel</div>
+                        <div class="skill" data-category="doctools"><i class="fas fa-file-powerpoint"></i> MS PowerPoint</div>
+
+                        
+                        <div class="skill" data-category="design"><img src="./logo/drawio-bw.png" class="skill-logo", style="width:18px;height:18px"> Draw.io</div>
+                        <div class="skill" data-category="design"><img src="./logo/lucidchart-bw.png" class="skill-logo", style="width:20px;height:20px"> LuchidChart</div>
+
+                        <!--div class="skill" data-category="ip"> <i class="fas fa-handshake"></i> Cross-functional
+                            Collaboration</div>
+                        <div class="skill" data-category="ip"><i class="far fa-clock"></i> Time Management</div>
+                        <div class="skill" data-category="ip"><i class="fas fa-tasks"></i>  Multitasking</div>
+                        <div class="skill" data-category="ip"><i class="fas fa-clipboard-list"></i>  Planning</div-->
+
+
+                    </div>
+                </div>
+            </section>
    
-    <!-- Skills -->
+    <!-- Skills 
     <section id="skills">
         <div class="container">
             <h2>Skills</h2>
@@ -339,7 +399,7 @@ modelling, validation and verification.</p>
             <div class="ml-dl-grid">
                 <div class="ml-dl">Computer Vision</div>
                 <div class="ml-dl">Deep learning</div>
-                <!--div class="ml-dl">OpenCV</div-->
+                
             </div>
         </div>
     </section>
@@ -353,7 +413,7 @@ modelling, validation and verification.</p>
                 <div class="webtech">jQuery</div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!--section id="version-control">
     <div class="container">
@@ -362,7 +422,7 @@ modelling, validation and verification.</p>
             <div class="version">Git</div>
         </div>
     </div>
-</section-->
+</section
 
     <section id="MStools">
         <div class="container">
@@ -385,7 +445,7 @@ modelling, validation and verification.</p>
                 <div class="otool">Lucidchart</div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Experience Timeline -->
     <!--section id="teaching">
@@ -455,53 +515,6 @@ modelling, validation and verification.</p>
             </div>
 
         </section-->
-
-<!--- Project section -->
-<!-- <section id="projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-
-                <div class="project-card" data-category="web" data-title="Software Engineering Lab"
-                    data-desc="Interactive SE simulations.">
-                    <a href="https://se-iitkgp.vlabs.ac.in/" target="_blank"><img src="./image/scte-icon.png"></a>
-                    <h5>Software Engineering </h5>
-                </div>
-
-                <div class="project-card" data-category="ux" data-title="Experimental Biochemistry"
-                    data-desc="Interactive simulations.">
-                    <a href="http://vlabs.iitkgp.ac.in/biochem/" target="_blank"><img
-                            src="./image/biochem-icond.png"></a>
-                    <h5>Experimental Biochemistry</h5>
-                </div>
-
-                <div class="project-card" data-category="web" data-title="Mining Engineering"
-                    data-desc="Interactive ME simulations.">
-                    <a href="https://mv-iitkgp.vlabs.ac.in/" target="_blank"><img src="./image/mv_icon.png"></a>
-                    <h5>Mine Automation and Virtual Reality</h5>
-                </div>
-
-                <div class="project-card" data-category="web" data-title="Digital Electronics Circuits"
-                    data-desc="Interactive DCE simulations.">
-                    <a href="https://dec-iitkgp.vlabs.ac.in/" target="_blank"><img src="./image/dec-icon.png"></a>
-                    <h5>Digital Electronics Circuits </h5>
-                </div>
-                <div class="project-card" data-category="web" data-title="Plant Metabollic Engineering"
-                    data-desc="Interactive PME simulations.">
-                    <a href="" target="_blank"><img src="./image/"></a>
-                    <h5>Plant Metabollic Engineering (Under development)</h5>
-                </div>
-
-                <div class="project-card" data-category="web" data-title="Science and Maths"
-                    data-desc="Interactive simulations.">
-                    <a href="https://prakriti5dhang.github.io/scmevsg-projects" target="_blank"><img src="./image/"></a>
-                    <h5>Science, Maths, and Environmental Science</h5>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
 
 
     </div>
